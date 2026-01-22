@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".fragment.SignUpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sign up Fragment" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/login_amico" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/signupFragmentEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/editetext_backgrount"
+        android:drawableLeft="@drawable/outline_attach_email_24"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="@string/email_txt_hind"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/signupFragmentPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/editetext_backgrount"
+        android:drawableLeft="@drawable/outline_android_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/password_txt_hind"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/signupFragmentConfirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/editetext_backgrount"
+        android:drawableLeft="@drawable/outline_android_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/confirm_txt_password_hint"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/signup_btn_txt"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

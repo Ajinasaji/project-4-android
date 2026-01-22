@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
     tools:context=".fragment.SignInFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sign in Fragment" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/login_rafiki" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/signinFragmentEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/editetext_backgrount"
+        android:drawableLeft="@drawable/outline_attach_email_24"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="@string/email_txt_hind"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+    />
+
+    <EditText
+        android:id="@+id/signinFragmentPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/editetext_backgrount"
+        android:drawableLeft="@drawable/outline_android_24"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/password_txt_hind"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/signinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/signin_btn_txt"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

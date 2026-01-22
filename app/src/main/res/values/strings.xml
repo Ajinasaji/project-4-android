@@ -3,4 +3,9 @@
     <string name="chat_app_txt">Chat App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_txt_hind">Email</string>
+    <string name="password_txt_hind">Password</string>
+    <string name="signin_btn_txt">Sign in</string>
+    <string name="confirm_txt_password_hint">Confirm Password</string>
+    <string name="signup_btn_txt">Sign up</string>
 </resources>
